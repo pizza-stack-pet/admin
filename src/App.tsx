@@ -8,7 +8,10 @@ import { MenuEdit } from "@/modules/menu/components/menu-edit/menu-edit.componen
 import { MenuCreate } from "@/modules/menu/components/menu-create/menu-create.component";
 
 import { authProvider } from "@/core/auth-provider";
+import { i18nProvider } from "./core/i18n";
 import { apolloClient } from "@/core/apollo-client";
+
+import { theme } from "@/core/theme";
 
 function App() {
   const [dataProvider, setDataProvider] = React.useState<DataProvider | null>(
@@ -37,7 +40,9 @@ function App() {
       <Admin
         dataProvider={dataProvider}
         authProvider={authProvider}
+        i18nProvider={i18nProvider}
         requireAuth
+        theme={theme}
       >
         <Resource
           name="menu"
