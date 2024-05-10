@@ -714,10 +714,10 @@ export type Uuid_Comparison_Exp = {
   _nin?: InputMaybe<Array<Scalars['uuid']['input']>>;
 };
 
-export type LoginQueryVariables = Exact<{
+export type AdminLoginQueryVariables = Exact<{
   username: Scalars['String']['input'];
   password: Scalars['String']['input'];
 }>;
 
 
-export type LoginQuery = { __typename?: 'query_root', adminLogin?: { __typename?: 'AdminLoginOutput', accessToken: string } | null };
+export type AdminLoginQuery = { __typename?: 'query_root', adminLogin?: { __typename?: 'AdminLoginOutput', accessToken: string } | null };

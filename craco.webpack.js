@@ -6,6 +6,7 @@ module.exports = {
       loader: "graphql-tag/loader",
     });
 
+    // Add .gql extension to graphql-loader
     webpackConfig.module.rules[1].oneOf[
       webpackConfig.module.rules[1].oneOf.length - 1
     ].exclude.push(/\.gql$/);

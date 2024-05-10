@@ -1,4 +1,4 @@
-query Login($username: String!, $password: String!) {
+query AdminLogin($username: String!, $password: String!) {
   adminLogin(admin: { password: $password, username: $username }) {
     accessToken
   }
