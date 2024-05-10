@@ -1,12 +1,14 @@
 const { CracoAliasPlugin } = require("react-app-alias");
-
-const options = {}; // default is empty for most cases
+const loadWebpackConfig = require("./craco.webpack");
 
 module.exports = {
   plugins: [
     {
       plugin: CracoAliasPlugin,
       options: {},
+    },
+    {
+      plugin: loadWebpackConfig,
     },
   ],
 };
