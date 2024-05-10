@@ -49,6 +49,9 @@ function App() {
           list={MenuList}
           edit={MenuEdit}
           create={MenuCreate}
+          // options={{
+          //   label: "Меню"
+          // }}
         />
       </Admin>
     </>
