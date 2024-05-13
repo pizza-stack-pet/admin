@@ -22,6 +22,7 @@ export const en: TranslationMessages = {
   },
   root: {
     searchByName: "Search by title",
+    upload: "Upload",
   },
 };
 
@@ -41,6 +42,7 @@ export const ua: TranslationMessages = {
   },
   root: {
     searchByName: "Пошук за назвою",
+    upload: "Завантажити",
   },
 };
 
